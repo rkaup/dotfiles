@@ -42,6 +42,7 @@ alias la="ll -a"
 alias l="ls -lha"
 
 alias murder="kill -s KILL"
+alias slaughter="killall -s KILL"
 alias ack="ack-grep"
 alias Files="nautilus --no-desktop"
 

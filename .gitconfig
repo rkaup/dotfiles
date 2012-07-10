@@ -7,3 +7,5 @@
 	excludesfile = /home/robin/gitignore
 [grep]
 	lineNumber = true
+[credential]
+	helper = cache

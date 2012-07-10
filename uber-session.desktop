@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=UberXmonad
+Comment=Better than your typical xmonad.
+Exec=/home/robin/UberXmonad
+Type=Application
+

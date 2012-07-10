@@ -1,0 +1,8 @@
+#!/bin/zsh
+
+gnome-settings-daemon &
+#xrandr --output LVDS1 --auto --rotate normal --pos 0x0 --output VGA1 --auto --rotate normal --left-of LVDS1
+
+xmonad
+
+

@@ -5,7 +5,7 @@ syntax on
 filetype plugin indent on
 " }}}
 "" Pathogen {{{
-let g:pathogen_disabled = ["clang_complete", "fugitive", "vim-fswitch", "vim-protodef", "pyflakes", "ropevim", "nerdtree", "supertab", "pydoc", "minibufexpl.vim"]
+let g:pathogen_disabled = ["clang_complete", "vim-fswitch", "vim-protodef", "pyflakes", "ropevim", "nerdtree", "supertab", "pydoc", "minibufexpl.vim"]
 call pathogen#infect()
 " }}}
 "" Column stuff {{{
@@ -126,6 +126,10 @@ nnoremap k gk
 noremap <F1> <nop>
 " Save some time!
 inoremap jj <Esc>
+" And force it upon.
+inoremap <Esc> <nop>
 nnoremap \r :RainbowParenthesesToggle<CR>
+" Should be a default
+nnoremap Y y$
 " }}}
 

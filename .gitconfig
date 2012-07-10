@@ -1,0 +1,9 @@
+[user]
+	name = Robin Kaup
+	email = robin@robinkaup.com
+[color]
+	ui = auto
+[core]
+	excludesfile = /home/robin/gitignore
+[grep]
+	lineNumber = true

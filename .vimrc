@@ -31,6 +31,7 @@ set guifont=Ubuntu\ Mono\ 9
 " }}}
 "" Solarized {{{
 set background=dark
+let g:solarized_visibility="high"    "default value is normal
 colorscheme solarized
 " }}}
 "" Title string {{{
@@ -85,6 +86,8 @@ set smartcase
 " Highlight during and after searching.
 set hlsearch
 nnoremap \h :nohlsearch<CR>
+" Use more typical regexes
+nnoremap / /\v
 " }}}
 "" Folds {{{
 func! RkFoldText()
@@ -96,7 +99,7 @@ set foldtext=RkFoldText()
 set foldmethod=marker
 " }}}
 "" Highlight evil whitespace {{{
-set listchars=tab:.\ ,trail:.
+set listchars=tab:.\ ,trail:\ 
 set list
 " }}}
 "" Miscellaneous {{{
@@ -105,5 +108,24 @@ set wildmenu
 " For gossake
 set hidden
 nnoremap \p :set invpaste<CR>:set paste?<CR>
+" Save undos after files are closed.
+set undofile
+" Highlight current line.
+set cursorline
+set showcmd
+set scrolloff=4
+" Always show status line
+set laststatus=2
+" Highlight what bracket we closed.
+set showmatch
+" :s has /g flag by default. Use /g to disable.
+set gdefault
+" Intuitive movement in wrapped lines.
+nnoremap j gj
+nnoremap k gk
+noremap <F1> <nop>
+" Save some time!
+inoremap jj <Esc>
+nnoremap \r :RainbowParenthesesToggle<CR>
 " }}}
 

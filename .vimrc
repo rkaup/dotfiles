@@ -1,12 +1,13 @@
+"" Pathogen {{{
+let g:pathogen_disabled = ["clang_complete", "vim-fswitch", "vim-protodef", "pyflakes", "ropevim", "nerdtree", "supertab", "pydoc", "minibufexpl.vim", "gundo.vim"]
+call pathogen#infect()
+call pathogen#helptags()
+" }}}
 "" Basics {{{
 " No one wants your shitty vi compatibility.
 set nocompatible
 syntax on
 filetype plugin indent on
-" }}}
-"" Pathogen {{{
-let g:pathogen_disabled = ["clang_complete", "vim-fswitch", "vim-protodef", "pyflakes", "ropevim", "nerdtree", "supertab", "pydoc", "minibufexpl.vim", "gundo.vim"]
-call pathogen#infect()
 " }}}
 "" Column stuff {{{
 " Relative line numbers in left column

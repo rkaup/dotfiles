@@ -1,0 +1,7 @@
+Config { commands = [ Run StdinReader
+					, Run Com "date" [] "date" 10
+                    ]
+       , template = "%StdinReader%}{%date% "
+       , lowerOnStart = True
+		, border = NoBorder
+       }

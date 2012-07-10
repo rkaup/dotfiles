@@ -1,2 +1,7 @@
 # Ignore everything. This is my home folder for god's sake!
-*
+/*
+
+!/.vim
+/.vim/bundle
+/.vim/.netrwhist
+

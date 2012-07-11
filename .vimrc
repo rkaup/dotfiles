@@ -108,7 +108,7 @@ set list
 set wildmenu
 " For gossake
 set hidden
-nnoremap \p :set invpaste<CR>:set paste?<CR>
+nnoremap \P :set invpaste<CR>:set paste?<CR>
 " Save undos after files are closed.
 set undofile
 " Highlight current line.
@@ -132,5 +132,10 @@ inoremap <Esc> <nop>
 nnoremap \r :RainbowParenthesesToggle<CR>
 " Should be a default
 nnoremap Y y$
+nnoremap \d :redraw!<CR>
+nnoremap \m :make<CR>
+nnoremap \t :make run<CR>
+nnoremap \n :cnext<CR>
+nnoremap \p :cprevious<CR>
 " }}}
 

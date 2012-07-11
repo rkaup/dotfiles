@@ -32,7 +32,7 @@ set guifont=Ubuntu\ Mono\ 9
 " }}}
 "" Solarized {{{
 set background=dark
-let g:solarized_visibility="high"    "default value is normal
+"let g:solarized_visibility="high"    "default value is normal
 colorscheme solarized
 " }}}
 "" Title string {{{

@@ -120,7 +120,7 @@ set laststatus=2
 " Highlight what bracket we closed.
 set showmatch
 " :s has /g flag by default. Use /g to disable.
-set gdefault
+" set gdefault
 " Intuitive movement in wrapped lines.
 nnoremap j gj
 nnoremap k gk

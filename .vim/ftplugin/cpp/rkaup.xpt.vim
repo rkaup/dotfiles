@@ -81,4 +81,11 @@ XPT guard
 
 ..XPT
 
+XPT ns
+namespace `name^ {
+
+`cursor^
+
+} // namespace `name^
+..XPT
 

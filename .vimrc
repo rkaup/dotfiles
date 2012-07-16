@@ -93,8 +93,9 @@ nnoremap / /\v
 "" Folds {{{
 func! RkFoldText()
     let line = getline(v:foldstart)
-    let tx = substitute(line, '// {{{\d*', '', 'g') " }}}
-    return v:folddashes . tx
+    let p = '\v' . '(//|)' . ' \{\{\{\d*$'
+    let tx = substitute(line, p, '', '')
+    return tx
 endfunc
 set foldtext=RkFoldText()
 set foldmethod=marker

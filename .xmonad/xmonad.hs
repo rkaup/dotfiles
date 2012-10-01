@@ -20,7 +20,9 @@ myStatusCmd = "xmobar"
 wsName wsId
         | wsId == "1"   = "web"
         | wsId == "2"   = "gvim+term"
+        | wsId == "3"   = "status"
         | wsId == "4"   = "music"
+        | wsId == "5"   = "torrents"
         | otherwise     = wsId
 
 displayWs wsId

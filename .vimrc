@@ -82,8 +82,8 @@ set expandtab
 "" Searching {{{
 " Search as we type.
 set incsearch
-set ignorecase
-set smartcase
+"set ignorecase
+"set smartcase
 " Highlight during and after searching.
 set hlsearch
 nnoremap \h :nohlsearch<CR>

@@ -9,3 +9,5 @@
 	lineNumber = true
 [credential]
 	helper = cache
+[rebase]
+	autosquash = yes

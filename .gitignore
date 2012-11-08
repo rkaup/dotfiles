@@ -7,5 +7,5 @@
 /.vim/bundle/*
 /.vim/.netrwhist
 
-!/.xmonad/
+!/.xmonad/xmonad.hs
 

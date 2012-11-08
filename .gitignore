@@ -2,7 +2,9 @@
 /*
 
 !/.vim/
-/.vim/bundle/
+!/.vim/bundle/Install.zsh
+!/.vim/bundle/Update.zsh
+/.vim/bundle/*
 /.vim/.netrwhist
 
 !/.xmonad/

@@ -10,7 +10,7 @@ for i in $fromHg; do
 done
 
 # Update vim plugins from git
-fromGit=(vim-colors-solarized/ vim-surround/ xptemplate/ rainbow_parentheses.vim/ vim-fugitive/ vim-glsl/)
+fromGit=(vim-colors-solarized/ vim-surround/ xptemplate/ rainbow_parentheses.vim/ vim-fugitive/ vim-glsl/ bufkill.vim/)
 for i in $fromGit; do
     echo "Updating $i"
     cd $i

@@ -6,4 +6,5 @@ if [ ! -d vim-surround ]; then git clone --progress git://github.com/tpope/vim-s
 if [ ! -d vim-fugitive ]; then git clone --progress git://github.com/tpope/vim-fugitive.git; fi
 if [ ! -d vim-glsl ]; then git clone --progress git@github.com:rkaup/vim-glsl.git; fi
 if [ ! -d bufkill.vim ]; then git clone --progress git@github.com:rkaup/bufkill.vim.git; fi
+if [ ! -d clang_complete ]; then git clone --progress https://github.com/Rip-Rip/clang_complete.git; fi
 

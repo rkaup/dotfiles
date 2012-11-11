@@ -1,20 +1,24 @@
+
 "" Pathogen {{{
 let g:pathogen_disabled = ["clang_complete", "vim-fswitch", "vim-protodef", "pyflakes", "ropevim", "nerdtree", "supertab", "pydoc", "minibufexpl.vim", "gundo.vim"]
 call pathogen#infect()
 call pathogen#helptags()
 " }}}
+
 "" Basics {{{
 " No one wants your shitty vi compatibility.
 set nocompatible
 syntax on
 filetype plugin indent on
 " }}}
+
 "" Column stuff {{{
 " Relative line numbers in left column
 set relativenumber
 " Highlight column 80
 set colorcolumn=80
 " }}}
+
 "" gvim stuff {{{
 "" guioptions {{{
 " No menus
@@ -30,11 +34,13 @@ set go-=T
 " }}}
 set guifont=Ubuntu\ Mono\ 9
 " }}}
+
 "" Solarized {{{
 set background=dark
 "let g:solarized_visibility="high"    "default value is normal
 colorscheme solarized
 " }}}
+
 "" Title string {{{
 func! RkTitleString()
     let fn = expand("%") == "" ? "<unnamed file>" : expand("%")
@@ -68,17 +74,20 @@ endfunc
 set titlestring=%{RkTitleString()}
 "set statusline=%!RkTitleString()
 " }}}
+
 "" Config edit shortcuts {{{
 nnoremap \V :e ~/.vimrc<CR>
 nnoremap \X :e ~/.xmonad/xmonad.hs<CR>
 nnoremap \Z :e ~/.zshrc<CR>
 nnoremap \v :source ~/.vimrc<CR>
 " }}}
+
 "" Tabs {{{
 set tabstop=4
 set shiftwidth=4
 set expandtab
 " }}}
+
 "" Searching {{{
 " Search as we type.
 set incsearch
@@ -90,6 +99,7 @@ nnoremap \h :nohlsearch<CR>
 " Use more typical regexes
 nnoremap / /\v
 " }}}
+
 "" Folds {{{
 func! RkFoldText()
     let line = getline(v:foldstart)
@@ -100,10 +110,12 @@ endfunc
 set foldtext=RkFoldText()
 set foldmethod=marker
 " }}}
+
 "" Highlight evil whitespace {{{
 set listchars=tab:.\ ,trail:\ 
 set list
 " }}}
+
 "" Miscellaneous {{{
 " Super duper : menus
 set wildmenu

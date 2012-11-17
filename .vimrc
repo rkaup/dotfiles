@@ -116,12 +116,49 @@ set listchars=tab:.\ ,trail:\
 set list
 " }}}
 
+"" Miscellaneous mappings {{{
+" Intuitive movement in wrapped lines.
+nnoremap j gj
+nnoremap k gk
+
+nnoremap Y y$
+
+noremap <F1> <nop>
+
+inoremap jj <Esc>
+inoremap <Esc> <nop>
+
+" Disable backspace, tab and enter. C-h, C-i and C-j are quicker.
+noremap <BS> <nop>
+vnoremap <BS> <nop>
+noremap! <BS> <nop>
+noremap <C-BS> <nop>
+vnoremap <C-BS> <nop>
+noremap! <C-BS> <nop>
+noremap <CR> <nop>
+vnoremap <CR> <nop>
+noremap! <CR> <nop>
+noremap <C-CR> <nop>
+vnoremap <C-CR> <nop>
+noremap! <C-CR> <nop>
+
+nnoremap \r :RainbowParenthesesToggle<CR>
+
+nnoremap \d :redraw!<CR>
+
+nnoremap \m :make<CR>
+nnoremap \t :make run<CR>
+nnoremap \n :cnext<CR>
+nnoremap \p :cprevious<CR>
+
+nnoremap \P :set invpaste<CR>:set paste?<CR>
+" }}}
+
 "" Miscellaneous {{{
 " Super duper : menus
 set wildmenu
 " For gossake
 set hidden
-nnoremap \P :set invpaste<CR>:set paste?<CR>
 " Save undos after files are closed.
 set undofile
 " Highlight current line.
@@ -134,21 +171,5 @@ set laststatus=2
 set showmatch
 " :s has /g flag by default. Use /g to disable.
 " set gdefault
-" Intuitive movement in wrapped lines.
-nnoremap j gj
-nnoremap k gk
-noremap <F1> <nop>
-" Save some time!
-inoremap jj <Esc>
-" And force it upon.
-inoremap <Esc> <nop>
-nnoremap \r :RainbowParenthesesToggle<CR>
-" Should be a default
-nnoremap Y y$
-nnoremap \d :redraw!<CR>
-nnoremap \m :make<CR>
-nnoremap \t :make run<CR>
-nnoremap \n :cnext<CR>
-nnoremap \p :cprevious<CR>
 " }}}
 

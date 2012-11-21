@@ -147,7 +147,7 @@ nnoremap \r :RainbowParenthesesToggle<CR>
 nnoremap \d :redraw!<CR>
 
 nnoremap \m :make<CR>
-nnoremap \t :make run<CR>
+nnoremap \t :make! run<CR>
 nnoremap \n :cnext<CR>
 nnoremap \p :cprevious<CR>
 

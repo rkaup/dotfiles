@@ -9,3 +9,6 @@
 
 !/.xmonad/xmonad.hs
 
+!/bin/
+!/bin/devel/*
+

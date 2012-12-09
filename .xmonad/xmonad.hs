@@ -9,7 +9,7 @@ import qualified Data.Map as M
 import XMonad.Layout.IndependentScreens
 import XMonad.Hooks.ManageDocks
 
-myLayoutHook = FixedColumn 1 10 84 10 ||| noBorders Full
+myLayoutHook = Tall 1 0.1 0.5 ||| noBorders Full
 
 myLogHook = dynamicLogWithPP $ defaultPP { ppHiddenNoWindows = (\wsId -> "fo")
                                          , ppSep = "abc"

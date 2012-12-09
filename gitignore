@@ -3,3 +3,5 @@
 *.[oa]
 *.~
 *.un~
+.gdbinit
+.clang_complete

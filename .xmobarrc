@@ -1,8 +1,10 @@
 Config { commands = [ Run StdinReader
-					, Run Com "date" [] "date" 10
+                    , Run Battery [] 10
+                    , Run Memory [] 10
+                    , Run Com "date" [] "date" 10
                     , Run Com "nm-online -x && echo Y || echo N" [] "net" 10
                     ]
-       , template = "%StdinReader%}{%net% %date% "
+       , template = " %StdinReader%}{%memory% | %battery% | %net% | %date% "
        , lowerOnStart = True
-		, border = NoBorder
+       , border = NoBorder
        }
